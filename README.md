@@ -1,3 +1,7 @@
+# ---
+
+> OpenClaw AI Agent Skill
+
 ---
 name: file-editor
 description: Safe, reliable file editing with validation and debugging. Use when editing code, configs, or markup (HTML, JSON, Python, JS). Prevents common mistakes like wrong parameter names, exact-text mismatches, and unintended changes. Includes validation, search verification, and rollback strategies.
@@ -227,3 +231,13 @@ For minified HTML/JS files:
 ## Key Insight
 
 **Never trust `edit` on minified code.** If a file has no newlines or very long lines (>500 chars), use `read` + `write` instead. It's faster and more reliable.
+
+## Installation
+
+```bash
+cp -r file-editor/ ~/.openclaw/workspace/skills/file-editor/
+```
+
+## License
+
+MIT © [Sentra Technology](https://github.com/Icattj)
